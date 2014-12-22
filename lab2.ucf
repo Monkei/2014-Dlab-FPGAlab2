@@ -1,0 +1,23 @@
+NET "LED<0>"  LOC = "F12" ;
+NET "LED<1>"  LOC = "E12" ;
+NET "LED<2>"  LOC = "E11" ;
+NET "LED<3>"  LOC = "F11" ;
+NET "LED<4>"  LOC = "C11" ;
+NET "LED<5>"  LOC = "D11" ;
+NET "LED<6>"  LOC = "E9" ;
+NET "LED<7>"  LOC = "F9" ;
+
+NET "sw<0>"  LOC = "L13" ;
+NET "sw<1>"  LOC = "L14" ;
+NET "sw<2>"  LOC = "H18" ;
+NET "sw<3>"  LOC = "N17" ;
+NET "clk"     LOC = "C9" ;
+
+NET  "BTN0" 	LOC = "H13"  | IOSTANDARD = LVTTL | PULLDOWN ;
+NET  "BTN1"     LOC = "V4"   | IOSTANDARD = LVTTL | PULLDOWN ;
+NET  "BTN2"    LOC = "D18"  | IOSTANDARD = LVTTL | PULLDOWN ;
+NET  "reset"     LOC = "K17"  | IOSTANDARD = LVTTL | PULLDOWN ;
+
+NET  "rot_A"     LOC = "K18"   | IOSTANDARD = LVTTL | PULLUP  ;
+NET  "rot_B"    LOC = "G18"  | IOSTANDARD = LVTTL | PULLUP  ;
+NET  "rot_dwn"     LOC = "V16"  | IOSTANDARD = LVTTL | PULLDOWN ;
