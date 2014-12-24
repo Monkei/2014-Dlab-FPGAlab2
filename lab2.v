@@ -11,10 +11,10 @@ reg rr_set, rl_set,rr_continue,rl_continue;
 
 always@(posedge reset or posedge clk)
 	if(reset)			cnt24 = 24'h000000;
-	else if(cnt24<24'ha00000	cnt24 = cnt24+1;
+	else if(cnt24 < 24'ha00000)	cnt24 = cnt24 + 1;
 	else                   		cnt24 = 24'h000000;
 	 
-assign slowclk= (cnt24==24'ha00000)?  1'b1 : 1'b0; // waveform of slowclk???
+assign slowclk = (cnt24 == 24'ha00000)?  1'b1 : 1'b0; // waveform of slowclk???
 
 always@(posedge reset or posedge clk)
 	if(reset)begin 
