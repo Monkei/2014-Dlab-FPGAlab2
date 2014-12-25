@@ -200,7 +200,7 @@ always@(posedge reset or negedge clk)       // why using negedge of the clock??
              	endcase
 
 always@(posedge reset or negedge clk)	// why using negedge of the clock??
-	if(reset				toggle_cnt = 8'h00;
+	if(reset)				toggle_cnt = 8'h00;
 	else if(slowclk && toggle_cnt<8'h11)	toggle_cnt = toggle_cnt + 8'h01;
 	else if(slowclk)          		toggle_cnt = 8'h00;
 	else					toggle_cnt = toggle_cnt;
